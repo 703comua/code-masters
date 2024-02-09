@@ -1,9 +1,7 @@
 .footer {
   width: 100%;
   padding: 50px 0;
-  position: absolute;
   top: 0;
-  transition: translateY(50%);
 }
 
 .footer-container-iner {

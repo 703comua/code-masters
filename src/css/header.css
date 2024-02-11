@@ -8,10 +8,11 @@ transition: translateY(50%);
 
 .header-container {
     width: calc(100% - 40px);
-    padding-top: 12px;
-    padding-bottom: 13px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 337px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    padding-right: 21px;
     background: var(--main-color4);
     border-radius: 8px;
     display: flex;
@@ -24,8 +25,8 @@ transition: translateY(50%);
     color: var(--main-color3);
     font-size: 14px;
     font-weight: 500;
+    line-height: normal;
     letter-spacing: -0.03em;
-    margin-left: 1px;
 }
 
 .header-navigation-list {
@@ -46,9 +47,9 @@ transition: translateY(50%);
     width: 28px;
     height: 28px;
     padding: 0;
-    right: 0;
-    transform: translateX(-50%);
-    top: 7px;
+    right: 21px;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 .mob-menu-close-btn.is-hidden {
@@ -77,8 +78,14 @@ transition: translateY(50%);
 }
 @media screen and (min-width: 375px) and (max-width: 767px){
     .header-container {
-        min-width: 335px;
+        min-width: 337px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .header-container {
+        max-height: 44px;
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -87,13 +94,14 @@ transition: translateY(50%);
     }
 
     .header-container {
-        min-width: 704px;
+        min-width: 706px;
         width: 704px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 28px;
-        padding-right: 28px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 29px;
+        padding-right: 31px;
         justify-content: space-between;
+        position: relative;
     }
     .navigation {
         display: flex;
@@ -101,12 +109,15 @@ transition: translateY(50%);
     }
     .header-logo {
         font-size: 20px;
-        margin-right: 109px;
+        line-height: normal;
     }
     .header-navigation-list {
         display: flex;
         align-items: center;
         gap: 4px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .header-navigation-link {
@@ -146,11 +157,12 @@ transition: translateY(50%);
         display: flex;
         gap: 12px;
         align-items: end;
-        margin-right: 3px;
     }
 
     .header-soc-icon-instagram {
         margin-right: 1px;
+        width: 19px;
+        height: 19px;
     }
 
 
@@ -172,23 +184,17 @@ transition: translateY(50%);
 
 @media screen and (min-width: 1280px) {
     .header-container {
-        min-width: 1080px;
+        min-width: 1082px;
         width: 1080px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .header-logo {
-        margin-right: 296px;
+        padding-left: 31px;
+        padding-right: 33px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .header-container {
-        min-width: 1240px;
+        min-width: 1242px;
         width: 1240px;
-    }
-    .header-logo {
-        margin-right: 375px;
     }
 }
 
